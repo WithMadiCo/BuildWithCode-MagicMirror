@@ -61,7 +61,7 @@ var config = {
 			module: "currentweather",
 			position: "top_right",
 			config: {
-				location: "Philadephia",
+				location: "Philadelphia",
 				locationID: "",  //ID from http://bulk.openweathermap.org/sample/; unzip the gz file and find your city
 				appid: "YOUR_OPENWEATHER_API_KEY"
 			}
@@ -71,14 +71,14 @@ var config = {
 			position: "top_bar",
 			header: "Weather Forecast",
 			config: {
-				location: "Philadephia",
+				location: "Philadelphia",
 				locationID: "5128581",  //ID from https://openweathermap.org/city
 				appid: "YOUR_OPENWEATHER_API_KEY"
 			}
 		},
 		{
 			module: "newsfeed",
-			position: "upper_third",
+			position: "top_right",
 			config: {
 				feeds: [
 					{
