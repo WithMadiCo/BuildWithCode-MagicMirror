@@ -31,7 +31,7 @@ var config = {
 		},
 		{
 			module: "updatenotification",
-			position: "top_bar"
+			position: "bottom_bar"
 		},
 		{
 			module: "clock",
@@ -43,7 +43,7 @@ var config = {
 		{
 			module: "calendar",
 			header: "US LazyDays",
-			position: "top_center",
+			position: "middle_center",
 			config: {
 				calendars: [
 					{
@@ -54,8 +54,10 @@ var config = {
 			}
 		},
 		{
-			module: "compliments",
-			position: "lower_third"
+			module: "helloworld",
+			position: "lower_third",
+			config: {
+				text: "Hello PapiAaron!"}
 		},
 		{
 			module: "currentweather",
@@ -78,7 +80,7 @@ var config = {
 		},
 		{
 			module: "newsfeed",
-			position: "top_right",
+			position: "bottom_right",
 			config: {
 				feeds: [
 					{
