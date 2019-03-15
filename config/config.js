@@ -48,7 +48,7 @@ var config = {
 				calendars: [
 					{
 						symbol: "calendar-check",
-						url: "webcal://www.calendarlabs.com/templates/ical/US-Holidays.ics"
+						url: "webcal://p71-calendars.icloud.com/published/2/AAAAAAAAAAAAAAAAAAAAABTPSdp5Yq7VhWxXmBy27xiVMvBvG87_ZcEsEeBvYOW3WsTITVOm_1eeUvsFc06lKiDIFAF9CDgric6LspOTLA8"
 					}
 				]
 			}
@@ -57,7 +57,7 @@ var config = {
 			module: "helloworld",
 			position: "lower_third",
 			config: {
-				text: "Hello PapiAaron!"}
+				text: "Hello Vocatio!"}
 		},
 		{
 			module: "currentweather",
@@ -70,7 +70,7 @@ var config = {
 		},
 		{
 			module: "weatherforecast",
-			position: "top_bar",
+			position: "top_right",
 			header: "Weather Forecast",
 			config: {
 				location: "Philadelphia",
