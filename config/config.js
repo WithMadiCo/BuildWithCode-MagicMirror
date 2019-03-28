@@ -23,16 +23,16 @@ var config = {
 
 	language: "en",
 	timeFormat: 24,
-	units: "metric",
+	units: "imperial", // this was metric
 
 	modules: [
-		{
-			module: "alert",
-		},
-		{
-			module: "updatenotification",
-			position: "bottom_bar"
-		},
+		// {
+		// 	module: "alert"
+		// },
+		// {
+		// 	module: "updatenotification",
+		// 	position: "bottom_bar"
+		// },
 		{
 			module: "clock",
 			position: "top_left",
@@ -42,8 +42,8 @@ var config = {
 		},
 		{
 			module: "calendar",
-			header: "US LazyDays",
-			position: "middle_center",
+			header: "Vocatio School Schedule",
+			position: "top_left",
 			config: {
 				calendars: [
 					{
@@ -53,19 +53,53 @@ var config = {
 				]
 			}
 		},
+		// {
+		// 	module: "helloworld",
+		// 	position: "lower_third",
+		// 	config: {
+		// 		text: "Hello Vocatio"
+		// 	}
+		// },
 		{
-			module: "helloworld",
+			module: "compliments",
 			position: "lower_third",
 			config: {
-				text: "Hello Vocatio!"}
+				compliments: {
+					anytime: [
+						"Hey Vocatio!",
+						"You are awesome!"
+					],
+					morning: [
+						"Good Morning Vocatio!",
+						"Are you ready for a great day?",
+						"You are making a difference!",
+						"You're more fun than bubble wrap!"
+					],
+					afternoon: [
+						"Hope you're having a great day!",
+						"Can't wait to see you tomorrow!",
+						"You made someone smile today, I know it.",
+						"You are making a difference.",
+						"The day was better for your efforts."
+					]
+				}
+			}
+		},
+		{
+			module: 'MMM-DailyBibleVerse',
+			position: 'bottom_bar',	// This can be any of the regions. Best result is in the bottom_bar as verses can take multiple lines in a day.
+			config: {
+	            version: 'NIV', // This can be changed to any version you want that is offered by Bible Gateway. For a list, go here: https://www.biblegateway.com/versions/,
+		    size: 'small' // default value is medium, but can be changed.
+			}
 		},
 		{
 			module: "currentweather",
 			position: "top_right",
 			config: {
 				location: "Philadelphia",
-				locationID: "",  //ID from http://bulk.openweathermap.org/sample/; unzip the gz file and find your city
-				appid: "YOUR_OPENWEATHER_API_KEY"
+				locationID: "4560349",  //ID from http://bulk.openweathermap.org/sample/; unzip the gz file and find your city
+				appid: "1d1a239860191a9fdea86e2cf4e57f1d"
 			}
 		},
 		{
@@ -74,24 +108,24 @@ var config = {
 			header: "Weather Forecast",
 			config: {
 				location: "Philadelphia",
-				locationID: "5128581",  //ID from https://openweathermap.org/city
-				appid: "YOUR_OPENWEATHER_API_KEY"
+				locationID: "4560349",  //ID from https://openweathermap.org/city
+				appid: "1d1a239860191a9fdea86e2cf4e57f1d"
 			}
 		},
-		{
-			module: "newsfeed",
-			position: "bottom_right",
-			config: {
-				feeds: [
-					{
-						title: "New York Times",
-						url: "http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml"
-					}
-				],
-				showSourceTitle: true,
-				showPublishDate: true
-			}
-		},
+		// {
+		// 	module: "newsfeed",
+		// 	position: "bottom_right",
+		// 	config: {
+		// 		feeds: [
+		// 			{
+		// 				title: "New York Times",
+		// 				url: "http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml"
+		// 			}
+		// 		],
+		// 		showSourceTitle: true,
+		// 		showPublishDate: true
+		// 	}
+		// },
 	]
 
 };
