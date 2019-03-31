@@ -37,7 +37,8 @@ var config = {
 			module: "clock",
 			position: "top_left",
 			config: {
-				displaySeconds: true
+				displaySeconds: true,
+				timeFormat:12
 			}
 		},
 		{
@@ -67,7 +68,18 @@ var config = {
 				compliments: {
 					anytime: [
 						"Hey Vocatio!",
-						"You are awesome!"
+						"You are awesome!",
+						"How are you doig",
+						"Ready to go Home",
+						"Who do love/like in Vocatio",
+						"Are you surpeme",
+						"With your hot breath who needs a het ",
+						"Do you know yourself",
+						"Which one would you where nikes or Jordans",
+						"0001111100111111011000011101010010110010",
+						"Whos your God",
+						"Stay in your lane BRO",
+						"Are you ready to jugded"
 					],
 					morning: [
 						"Good Morning Vocatio!",
